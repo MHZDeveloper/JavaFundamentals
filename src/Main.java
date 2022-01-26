@@ -1,14 +1,15 @@
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("\"Hello World\"");
-        // "Hello World"
-        System.out.println("C:\\programs\\folder");
-        // C:\programs\folder
-        System.out.println("new\nline");
-        // new
-        // line
-        System.out.println("\ttab");
-        //     tab
+        // byte[] myNumbers = new byte[5];
+        byte[] myNumbers = {6, 8, 7, 4, 1};
+        System.out.println("first element = " + myNumbers[0]);
+        myNumbers[0] = 2;
+        System.out.println("length = " + myNumbers.length);
+        System.out.println("myNumbers = " + Arrays.toString(myNumbers));
+        Arrays.sort(myNumbers);
+        System.out.println("myNumbers = " + Arrays.toString(myNumbers));
     }
 }
