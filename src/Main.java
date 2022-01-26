@@ -1,31 +1,16 @@
-import java.awt.*;
-
 public class Main {
 
     public static void main(String[] args) {
+        String ch = "Hello World !";
 
-        //primitive type
-        byte myNumber = 5;
-        System.out.println(myNumber);
-
-        // reference type
-        Point a = new Point(1, 1);
-        System.out.println(a);
-
-        // *** primitive vs reference
-        System.out.println("- primitive vs reference");
-        // primitive
-        byte x = 1;
-        byte y = x;
-        x = 3;
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-
-        // reference
-        Point p1 = new Point(1, 1);
-        Point p2 = p1;
-        p1.y = 2;
-        System.out.println("p1 = " + p1);
-        System.out.println("p2 = " + p2);
+        System.out.println("ends with '!' : " + ch.endsWith("!"));
+        System.out.println("starts with 'h' : " + ch.startsWith("h"));
+        System.out.println("length : " + ch.length());
+        System.out.println("index of 'o' : " + ch.indexOf("o"));
+        System.out.println("replace every 'o' with 'a' : " + ch.replace("o","a"));
+        System.out.println("to lowercase : " + ch.toLowerCase());
+        System.out.println("to uppercase : " + ch.toUpperCase());
+        ch = "    Hello World !    ";
+        System.out.println("trim : " + ch.trim());
     }
 }
