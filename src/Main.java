@@ -5,13 +5,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("gimme a string");
-        String ch = scanner.nextLine();
-        System.out.println("your input was " + ch);
+        System.out.println("ax² + bc + c = 0");
 
-        System.out.println("gimme an int");
-        int num = scanner.nextInt();
-        System.out.println("your input was " + num);
+        System.out.print("a = ");
+        double a = scanner.nextDouble();
 
+        System.out.print("b = ");
+        double b = scanner.nextDouble();
+
+        System.out.print("c = ");
+        double c = scanner.nextDouble();
+
+        double delta = Math.pow(b, 2) - (4 * a * c);
+        System.out.println("delta = " + delta);
     }
 }
