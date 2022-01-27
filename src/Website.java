@@ -1,6 +1,6 @@
 public class Website {
 
-    private WebRenderer webRenderer = new WebRenderer();
+    private Renderer webRenderer = new WebRenderer();
 
     void print(){
         webRenderer.render();
