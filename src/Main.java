@@ -1,6 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World !!");
+        TextBox textBox = new TextBox();
+        textBox.text = "Hello World !";
+        System.out.println(textBox.text);
     }
 }
