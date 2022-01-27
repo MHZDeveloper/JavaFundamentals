@@ -9,5 +9,14 @@ public class Main {
         float a = 1.2F;
         double b = a;
         a = (float)b;
+
+        // cast from string
+        String ch1 = "7";
+        int myNumber1 = Integer.parseInt(ch1);
+        System.out.println(myNumber1);
+
+        String ch2 = "7.4";
+        float myNumber2 = Float.parseFloat(ch2);
+        System.out.println(myNumber2);
     }
 }
