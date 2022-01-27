@@ -1,23 +1,17 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        // round
-        double a1 = Math.round(1.5);
-        System.out.println(a1);
-        double a2 = Math.round(1.4);
-        System.out.println(a2);
+        Scanner scanner = new Scanner(System.in);
 
-        // ceil
-        double b = Math.ceil(1.5);
-        System.out.println(b);
+        System.out.println("gimme a string");
+        String ch = scanner.nextLine();
+        System.out.println("your input was " + ch);
 
-        // floor
-        double c = Math.floor(1.5);
-        System.out.println(c);
+        System.out.println("gimme an int");
+        int num = scanner.nextInt();
+        System.out.println("your input was " + num);
 
-        // random
-        double d = Math.random();
-        System.out.println(d);
-        System.out.println((int) (d * 100));
     }
 }
