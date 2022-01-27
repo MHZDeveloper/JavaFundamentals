@@ -1,13 +1,23 @@
 public class Main {
 
     public static void main(String[] args) {
-        // byte -> short -> int -> long -> float -> double
-        byte x = 3;
-        int y =x;
-        x=(byte)y;
+        // round
+        double a1 = Math.round(1.5);
+        System.out.println(a1);
+        double a2 = Math.round(1.4);
+        System.out.println(a2);
 
-        float a = 1.2F;
-        double b = a;
-        a = (float)b;
+        // ceil
+        double b = Math.ceil(1.5);
+        System.out.println(b);
+
+        // floor
+        double c = Math.floor(1.5);
+        System.out.println(c);
+
+        // random
+        double d = Math.random();
+        System.out.println(d);
+        System.out.println((int) (d * 100));
     }
 }
