@@ -1,11 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
-        WebControl webControl = new WebControl();
+        WebControl webControl = new TextBox();
         webControl.show();
-        TextBox textBox = new TextBox("Hello World !");
+
+        TextBox textBox = new TextBox();
         textBox.show();
-        CheckBox checkBox = new CheckBox();
-        checkBox.show();
     }
 }
