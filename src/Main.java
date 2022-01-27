@@ -1,33 +1,17 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        short myNumber = 2;
-        String msg = "";
-        if (myNumber > 0) {
-            msg = "Positive";
-        } else if (myNumber < 0) {
-            msg = "Negative";
-        } else {
-            msg = "Zero";
-        }
-        System.out.println(msg);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int myNumber = scanner.nextInt();
 
-        msg = myNumber % 2 == 0 ? "Even" : "Odd";
-        System.out.println(msg);
-
-        switch (myNumber) {
-            case 1: {
-                System.out.println("1");
-                break;
-            }
-            case 2: {
-                System.out.println("2");
-                break;
-            }
-            case 3: {
-                System.out.println("3");
-                break;
-            }
-        }
+        if (myNumber%3==0)
+            System.out.println("FIZZ");
+        else if (myNumber%5==0)
+            System.out.println("BUZZ");
+        else
+            System.out.println(myNumber);
     }
 }
