@@ -1,4 +1,4 @@
-public class WebControl {
+public abstract class WebControl {
     protected boolean isEnabled = true;
 
     void enable() {
@@ -13,7 +13,5 @@ public class WebControl {
         return isEnabled;
     }
 
-    public void show() {
-        System.out.println("web control is shown !");
-    }
+    public abstract void show();
 }
