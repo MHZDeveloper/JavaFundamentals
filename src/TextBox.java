@@ -1,7 +1,6 @@
-public class TextBox {
+public class TextBox extends WebControl {
 
     private String text;
-    private boolean isEnabled = true;
 
     public static int counter;
 
@@ -23,14 +22,6 @@ public class TextBox {
     void setText(String text) {
         if (isEnabled)
             this.text = text;
-    }
-
-    void enable() {
-        this.isEnabled = true;
-    }
-
-    void disable() {
-        this.isEnabled = false;
     }
 
     public String getText() {
