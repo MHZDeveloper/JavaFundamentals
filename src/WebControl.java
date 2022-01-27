@@ -12,4 +12,8 @@ public class WebControl {
     public boolean isEnabled() {
         return isEnabled;
     }
+
+    public void show() {
+        System.out.println("web control is shown !");
+    }
 }

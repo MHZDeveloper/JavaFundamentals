@@ -9,6 +9,11 @@ public class CheckBox extends WebControl {
         this.isChecked = isChecked;
     }
 
+    @Override
+    public void show() {
+        System.out.println("checkbox is shown !");
+    }
+
     public boolean isChecked() {
         return isChecked;
     }

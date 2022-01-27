@@ -19,6 +19,11 @@ public class TextBox extends WebControl {
         counter++;
     }
 
+    @Override
+    public void show() {
+        System.out.println("text box is shown !");
+    }
+
     void setText(String text) {
         if (isEnabled)
             this.text = text;
